@@ -1,0 +1,12 @@
+**/.git
+**/.svn
+**/.hg
+.idea
+node_modules
+package-lock.json
+.nyc_output/
+nyc_output/
+coverage/
+.eslintcache
+id_rsa
+tmp

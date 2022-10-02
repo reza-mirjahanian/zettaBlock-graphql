@@ -1,0 +1,18 @@
+type Query {
+  "chat message string in GraphQL query format as input"
+  records(message: String!): Content!
+}
+
+type Content {
+  "Always starts with an '@' and ends when hitting a non-word character."
+  mentions: [String]
+
+  "alphanumeric strings, no longer than 15 characters, contained in parenthesis."
+  emoticons: [String]
+
+  "Http URLs."
+  links: [JSON]
+}
+
+scalar JSON
+scalar JSONObject
